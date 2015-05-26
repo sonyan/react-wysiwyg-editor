@@ -1,0 +1,32 @@
+{
+  "name": "react-editable-div",
+  "version": "0.0.1",
+  "description": "A bootstrap-style react component that transforms a div into simple wysiwyg editor and acts like html input.",
+  "main": "EditableDiv.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sonyan/react-editable-div.git"
+  },
+  "keywords": [
+    "react",
+    "editable",
+    "editable",
+    "div",
+    "wysiwyg",
+    "content",
+    "editable",
+    "bootstrap"
+  ],
+  "author": "Sony An <sony.an@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sonyan/react-editable-div/issues"
+  },
+  "homepage": "https://github.com/sonyan/react-editable-div",
+  "dependencies": {
+    "react": "^0.13.3"
+  }
+}
