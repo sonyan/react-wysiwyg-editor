@@ -1,7 +1,7 @@
 {
   "name": "react-editable-div",
   "version": "0.0.1",
-  "description": "A bootstrap-style react component that transforms a div into simple wysiwyg editor and acts like html input.",
+  "description": "A bootstrap-style react component for wysiwyg editor.",
   "main": "EditableDiv.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,11 +13,9 @@
   "keywords": [
     "react",
     "editable",
-    "editable",
     "div",
     "wysiwyg",
-    "content",
-    "editable",
+    "editor",
     "bootstrap"
   ],
   "author": "Sony An <sony.an@outlook.com>",
