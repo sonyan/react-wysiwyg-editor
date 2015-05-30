@@ -1,7 +1,7 @@
 # react-editable-div
 A bootstrap-style react component for wysiwyg editor
 
-I need a wysiwyg editor that works with react coding style, especially react way of dealing with form. Most of wysiwyg editor implementations out there are designed for jQuery or DOM. Of course, you can use them with react application, but it takes more work to make them play well with react component. This is a simple react component, with 184 lines of code, that works like react ```html <input> ``` component. 
+I need a wysiwyg editor that works with react coding style, especially react way of dealing with form. Most of wysiwyg editor implementations out there are designed for jQuery or DOM. Of course, you can use them with react application, but it takes more work to make them play well with react component. This is a simple react component, with 184 lines of code, that works like react ```<input>``` component. 
 
 ## Install
 
