@@ -1,6 +1,6 @@
 {
-  "name": "react-editable-div",
-  "version": "0.0.1",
+  "name": "react-wysiwyg-editor",
+  "version": "0.0.2",
   "description": "A bootstrap-style react component for wysiwyg editor.",
   "main": "EditableDiv.js",
   "scripts": {
@@ -30,7 +30,6 @@
   },
   "devDependencies": {
     "jsx-loader": "^0.13.2",
-    "node-libs-browser": "^0.5.2",
     "webpack": "^1.9.10"
   }
 }
