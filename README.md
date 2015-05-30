@@ -30,7 +30,7 @@ Example:
 Simply require it to use it:
 
 ```javascript
-var EditableDiv = require('react-editable-div');
+var EditableDiv = require('react-wysiwyg-editor');
 ```
 
 Specify initial content in getInitialState:
