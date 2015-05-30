@@ -17,19 +17,17 @@ module.exports = React.createClass({
 	},
 
 	render: function() {
-		// Customize your editor with css rules
 		var editorStyle = {
 			overflow: 'auto',
 			width: 300,
 			height: 100,
 			maxHeight: 100
 		}
-		
 		return(
-			<div className="form-group">
-				<label>Comment:</label>
-				<EditableDiv style={editorStyle} content={this.state.content} onChange={this.handleContentChange} />
-			</div>
+			React.createElement("div", {className: "form-group"}, 
+				React.createElement("label", null, "Comment:"), 
+				React.createElement(EditableDiv, {style: editorStyle, content: this.state.content, onChange: this.handleContentChange})
+			)
 		);
 	}
 });
