@@ -6,9 +6,9 @@ I need a wysiwyg editor that works with react coding style, especially react way
 ## Install
 
 ```sh
-npm install react-editable-div
+npm install react-wysiwyg-editor
 or
-bower install react-editable-div
+bower install react-wysiwyg-editor
 ```
 
 ## Usage
