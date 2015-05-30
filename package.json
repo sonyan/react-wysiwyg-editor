@@ -1,6 +1,6 @@
 {
   "name": "react-wysiwyg-editor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A bootstrap-style react component for wysiwyg editor.",
   "main": "EditableDiv.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sonyan/react-editable-div.git"
+    "url": "https://github.com/sonyan/react-wysiwyg-editor.git"
   },
   "keywords": [
     "react",
@@ -21,9 +21,9 @@
   "author": "Sony An <sony.an@outlook.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sonyan/react-editable-div/issues"
+    "url": "https://github.com/sonyan/react-wysiwyg-editor/issues"
   },
-  "homepage": "https://github.com/sonyan/react-editable-div",
+  "homepage": "https://github.com/sonyan/react-wysiwyg-editor",
   "dependencies": {
     "express": "^4.12.4",
     "react": "^0.13.3"
