@@ -28,6 +28,12 @@ module.exports = React.createClass({
 		}.bind(this));
 	},
 
+	componentWillReceiveProps: function(nextProps) {
+		this.setState({
+			html: nextProps.content
+		});
+	},
+
 	shouldComponentUpdate: function(nextProps) {
         return nextProps.content !== this.state.html;
     },
