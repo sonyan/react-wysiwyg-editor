@@ -30,6 +30,12 @@ module.exports = React.createClass({
 	shouldComponentUpdate: function(nextProps) {
         return nextProps.content !== this.state.html;
     },
+    
+    componentDidUpdate: function(prevProps, prevState){
+      this.setState({  
+        html: this.props.content  
+      }); 
+    },
 
     execCommand: function(command, arg) {
     	document.execCommand(command, false, arg);
