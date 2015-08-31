@@ -1,6 +1,6 @@
 {
   "name": "react-wysiwyg-editor",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A bootstrap-style react component for wysiwyg editor.",
   "main": "EditableDiv.js",
   "scripts": {
