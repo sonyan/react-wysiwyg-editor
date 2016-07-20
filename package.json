@@ -1,6 +1,6 @@
 {
   "name": "react-wysiwyg-editor",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A bootstrap-style react component for wysiwyg editor.",
   "main": "EditableDiv.js",
   "scripts": {
@@ -26,7 +26,7 @@
   "homepage": "https://github.com/sonyan/react-wysiwyg-editor",
   "dependencies": {
     "express": "^4.12.4",
-    "react": "^0.13.3"
+    "react": "15.2.1"
   },
   "devDependencies": {
     "jsx-loader": "^0.13.2",
