@@ -15,7 +15,7 @@ module.exports = React.createClass({
 	},
 
 	emitChange: function() {
-		var editor = this.refs.editor.getDOMNode(),
+		var editor = this.refs.editor,
 			newHtml = editor.innerHTML;
 
 		this.setState({html: newHtml}, function() {
