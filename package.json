@@ -25,7 +25,6 @@
   },
   "homepage": "https://github.com/sonyan/react-wysiwyg-editor",
   "dependencies": {
-    "express": "^4.12.4",
     "react": "15.2.1"
   },
   "devDependencies": {
