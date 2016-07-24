@@ -1,5 +1,5 @@
 'use strict';
-var React = require('react');
+import React from 'react';
 
 module.exports = React.createClass({
 	displayName: 'EditableDiv',
@@ -37,6 +37,16 @@ module.exports = React.createClass({
         return nextProps.content !== this.state.html;
     },
 
+		addLink: function(){
+			var linkURL = prompt('Enter a URL:', 'http://');
+			if (linkURL !== null){
+	 			var selection = document.getSelection().toString();
+	 			var linkText = selection === '' ? prompt('Enter the link text:', linkURL) : selection;
+				if (linkText !== null)
+					this.execCommand('insertHTML', '<a href="' + linkURL + '" target="_blank">' + linkText + '</a>');
+			}
+		},
+
     execCommand: function(command, arg) {
     	document.execCommand(command, false, arg);
     },
@@ -50,12 +60,12 @@ module.exports = React.createClass({
 			<div>
 				<div style={toolbarStyle}>
 
-					{/** feel free to customize buttons below. 
+					{/** feel free to customize buttons below.
 					for list of supported commands, please see https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand */}
 					<div className="btn-group" style={buttonSpacing}>
-						<button 
-							className="btn btn-default btn-xs dropdown-toggle" 
-							type="button" data-toggle="dropdown" 
+						<button
+							className="btn btn-default btn-xs dropdown-toggle"
+							type="button" data-toggle="dropdown"
 							aria-expanded="true">
 							<i className="fa fa-paragraph"></i> <i className="fa fa-caret-down"></i>
 						</button>
@@ -104,9 +114,9 @@ module.exports = React.createClass({
 						</button>
 
 						<div className="btn-group" role="group">
-							<button 
-								className="btn btn-default btn-xs dropdown-toggle" 
-								type="button" data-toggle="dropdown" 
+							<button
+								className="btn btn-default btn-xs dropdown-toggle"
+								type="button" data-toggle="dropdown"
 								aria-expanded="true">
 								<i className="fa fa-text-height"></i> <i className="fa fa-caret-down"></i>
 							</button>
@@ -151,7 +161,7 @@ module.exports = React.createClass({
 							type="button"
 							data-toggle="dropdown"
 							aria-expanded="false">
-							<i className="fa fa-align-left"></i> <i className="fa fa-caret-down"></i>							
+							<i className="fa fa-align-left"></i> <i className="fa fa-caret-down"></i>
 						</button>
 						<ul className="dropdown-menu" role="menu">
 							<li>
@@ -169,9 +179,16 @@ module.exports = React.createClass({
 						</ul>
 					</div>
 
-					<button 
-						type="button" 
-						className="btn btn-default btn-xs" 
+					<button
+						type="button"
+						className="btn btn-default btn-xs"
+						onClick={this.addLink}>
+						<i className="fa fa-link"></i>
+					</button>
+
+					<button
+						type="button"
+						className="btn btn-default btn-xs"
 						onClick={this.execCommand.bind(this, 'removeFormat')}>
 						<i className="fa fa-eraser"></i>
 					</button>
@@ -180,7 +197,7 @@ module.exports = React.createClass({
 				<div
 					ref="editor"
 					className="form-control"
-					{...this.props} 
+					{...this.props}
 					contentEditable="true"
 					dangerouslySetInnerHTML={{__html: this.state.html}}
 					onInput={this.emitChange} />
