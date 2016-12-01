@@ -16,8 +16,7 @@ module.exports = React.createClass({
 	},
 
 	emitChange: function() {
-		var editor = this.refs.editor,
-			newHtml = editor.innerHTML;
+		var newHtml = this.editor.innerHTML;
 
 		this.setState({html: newHtml}, function() {
 			this.props.onChange({
@@ -43,6 +42,7 @@ module.exports = React.createClass({
     },
 
 	render: function() {
+		var self = this;
 		// customize css rules here
 		var buttonSpacing = {marginRight: 2},
 			toolbarStyle = {marginBottom: 3};
@@ -179,7 +179,7 @@ module.exports = React.createClass({
 				), 
 
 				React.createElement("div", React.__spread({
-					ref: "editor", 
+					ref: {function(el) { self.editor = el; }}, 
 					className: "form-control"}, 
 					this.props, 
 					{contentEditable: "true", 
