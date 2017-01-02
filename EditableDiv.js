@@ -178,7 +178,7 @@ module.exports = React.createClass({
 					)
 				), 
 
-				React.createElement("div", Object.assign({
+				React.createElement("div", Object.assign({},{
 					ref: {function(el) { self.editor = el; }}, 
 					className: "form-control"}, 
 					this.props, 
