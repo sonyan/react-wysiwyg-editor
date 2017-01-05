@@ -180,9 +180,7 @@ module.exports = React.createClass({
 
 				React.createElement("div",React.__spread(
 				{
-					ref: {
-						function(el) { self.editor = el; }
-					}, 
+					ref: function(el) { self.editor = el; },
 					className: "form-control"
 				}, 
 				this.props, 
