@@ -16,7 +16,7 @@ module.exports = React.createClass({
 	},
 
 	emitChange: function() {
-		var newHtml = this.refs['[object Object]'].innerHTML;
+		var newHtml = this.editor.innerHTML;
 
 		this.setState({html: newHtml}, function() {
 			this.props.onChange({
