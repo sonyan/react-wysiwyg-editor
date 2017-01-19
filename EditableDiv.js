@@ -178,13 +178,17 @@ module.exports = React.createClass({
 					)
 				), 
 
-				React.createElement("div", React.__spread({
-					ref: {function(el) { self.editor = el; }}, 
-					className: "form-control"}, 
-					this.props, 
-					{contentEditable: "true", 
+				React.createElement("div",React.__spread(
+				{
+					ref: function(el) { self.editor = el; },
+					className: "form-control"
+				}, 
+				this.props, 
+				{
+					contentEditable: "true", 
 					dangerouslySetInnerHTML: {__html: this.state.html}, 
-					onInput: this.emitChange}))
+					onInput: this.emitChange
+				}))
 			)
 		);
 	}
